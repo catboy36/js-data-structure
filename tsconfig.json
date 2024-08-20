@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "es5" /* 指定编译目标：'ES3'、'ES5'、'ES2015'、'ES2016'、'ES2017'等 */,
+    "module": "commonjs" /* 指定生成何种模块代码：'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', 或 'esnext' */,
+    "lib": ["es6", "dom"] /* 指定要包含在编译中的库文件 */,
+    "sourceMap": true /* 生成相应的'.map'文件 */,
+    "outDir": "./dist" /* 指定输出文件目录 */,
+    "strict": true /* 启用所有严格类型检查选项 */,
+    "noUnusedLocals": true /*  Report errors on unused locals. */,
+    "noUnusedParameters": true /*  Report errors on unused parameters. */,
+    "pretty": true /* 在.js文件中输出格式化后的代码 */,
+    "experimentalDecorators": true /* 允许使用实验性的装饰器特性 */,
+    "emitDecoratorMetadata": true /* 为装饰器生成元数据 */,
+    "typeRoots": ["typings"],
+  },
+  "include": ["src/**/*" /* 编译项目中的所有TypeScript文件 */],
+  "exclude": ["node_modules", "dist", "**/*.spec.ts" /* 指定编译器要排除的文件或目录 */]
+}
