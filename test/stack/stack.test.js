@@ -1,4 +1,6 @@
-import { Stack } from '@/core/index';
+/* eslint-env node, jest */
+import { Stack } from '../../src/core/index';
+
 describe('Stack', () => {
   test('stack methods', () => {
     const stack = new Stack();

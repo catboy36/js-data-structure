@@ -12,6 +12,7 @@
     "experimentalDecorators": true /* 允许使用实验性的装饰器特性 */,
     "emitDecoratorMetadata": true /* 为装饰器生成元数据 */,
     "typeRoots": ["typings"],
+    "esModuleInterop": true
   },
   "include": ["src/**/*" /* 编译项目中的所有TypeScript文件 */],
   "exclude": ["node_modules", "dist", "**/*.spec.ts" /* 指定编译器要排除的文件或目录 */]

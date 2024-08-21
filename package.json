@@ -6,13 +6,22 @@
   "scripts": {
     "dev": "vite --config vite.config.js",
     "build": "vite build",
-    "test": "jest"
+    "test": "jest --config jest.config.js",
+    "td": "jest --config jest.config.js && vite --config vite.config.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/plugin-transform-modules-commonjs": "^7.24.8",
+    "@babel/preset-env": "^7.25.3",
+    "@babel/preset-typescript": "^7.24.7",
+    "@jest/globals": "^29.7.0",
+    "@types/jest": "^29.5.12",
+    "babel-jest": "^29.7.0",
     "jest": "^29.7.0",
+    "ts-jest": "^29.2.4",
     "typescript": "^5.5.4",
     "vite": "^5.4.1"
   }
