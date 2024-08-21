@@ -1,5 +1,5 @@
 export default class Stack implements IStack {
-  stack: Array<any>;
+  private stack: Array<any>;
   constructor() {
     this.stack = [];
   }
@@ -14,5 +14,17 @@ export default class Stack implements IStack {
 
   peek() {
     return this.stack[this.stack.length - 1];
+  }
+
+  isEmpty() {
+    return this.stack.length === 0;
+  }
+
+  clear() {
+    this.stack = [];
+  }
+
+  size() {
+    return this.stack.length;
   }
 }
