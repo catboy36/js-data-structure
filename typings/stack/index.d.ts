@@ -1,4 +1,4 @@
-declare interface IStack {
+interface IStack {
   pop: () => any;
   push: (data: any) => void;
   peek: () => any;

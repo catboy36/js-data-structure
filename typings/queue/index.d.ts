@@ -1,4 +1,4 @@
-declare interface IQueue {
+interface IQueue {
     enqueue: (data: any) => void;
     dequeue: () => any;
     peek: () => any;
