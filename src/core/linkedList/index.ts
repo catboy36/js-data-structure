@@ -57,6 +57,7 @@ export default class LinkedList implements ILinkedList {
       while (index < position) {
         prev = cur;
         cur = cur.next!;
+        index++;
       }
       prev!.next = cur.next;
     }
