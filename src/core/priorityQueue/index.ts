@@ -45,7 +45,7 @@ export default class PriorityQueue implements IPriorityQueue {
 
   dequeue(): any {
     const last = this.queue.pop();
-    const head = this.peek();
+    const head = this.peek() || last?.data;
     if (this.queue.length > 0) {
       this.queue[0] = last!;
       this.shiftDown(0);
